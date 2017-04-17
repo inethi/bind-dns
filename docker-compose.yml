@@ -1,4 +1,6 @@
-# Docker-Compose file for BIND9 DNS Server
+# Creator: Eddy Elbrink
+# Project: Inethi Community Network
+# Docker-Compose file for BIND9 DNS Server Container
 
 version: '3'
 
