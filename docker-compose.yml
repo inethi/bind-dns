@@ -1,0 +1,17 @@
+# Docker-Compose file for BIND9 DNS Server
+
+version: '3'
+
+services:
+
+  bind:
+    build: .
+    container_name: ns1.inethi.net
+    hostname: ns1.inethi.net
+    domainname: ns1.inethi.net
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "9000:10000/tcp"
+    network_mode: "bridge"
+    restart: on-failure
